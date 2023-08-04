@@ -17,7 +17,7 @@ class LivroController {
 
   static listarLivroPorId = async (req, res, next) => {
     try {
-      const busca = await processBusca(req.query);
+      const busca = await processaBusca(req.query);
 
       if (busca !== null) {
         const livrosResultado = await livros
